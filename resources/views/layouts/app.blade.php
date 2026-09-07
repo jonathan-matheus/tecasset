@@ -5,11 +5,9 @@
         <title>TecAsset - @yield('title', 'Tecnologia sob controle')</title>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body>
-        <div>
-            <p>[sidebar vai entrar aqui no próximo conceito]</p>
-        </div>
-        <main>
+    <body class="flex">
+        <x-sidebar />
+        <main class="flex-1 p-8">
             @yield('content')
         </main>
     </body>
